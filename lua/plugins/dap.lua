@@ -278,7 +278,7 @@ return {
 			-- TODO : We need a system that can save configurations per project
 			-- TODO : Need to figure out if this runs every time we open a new project
 			for _, lang in ipairs({ "typescript", "javascript" }) do
-				vim.notify("We are here!", vim.log.levels.DEBUG)
+				-- vim.notify("We are here!", vim.log.levels.DEBUG)
 				dap.configurations[lang] = {
 					{
 						type = pwa_node_adapter,

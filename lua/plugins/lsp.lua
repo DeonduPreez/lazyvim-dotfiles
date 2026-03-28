@@ -102,5 +102,19 @@ return {
 			},
 		},
 	},
+	{
+		"DrKJeff16/wezterm-types",
+		version = false, -- Get the latest version
+	},
+	{
+		"folke/lazydev.nvim",
+		ft = "lua",
+		dependencies = { "DrKJeff16/wezterm-types" },
+		opts = {
+			library = {
+				-- Other library configs...
+				{ path = "wezterm-types", mods = { "wezterm" } },
+			},
+		},
+	},
 }
-
